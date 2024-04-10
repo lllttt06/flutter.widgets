@@ -296,7 +296,7 @@ class RenderVisibilityDetector extends RenderProxyBox
   final Key key;
 
   @override
-  Rect? visibilityDetectedArea;
+  Rect? customVisibleBounds;
 
   @override
   Rect? get bounds => hasSize ? semanticBounds : null;
@@ -322,7 +322,7 @@ class RenderSliverVisibilityDetector extends RenderProxySliver
   final Key key;
 
   @override
-  Rect? visibilityDetectedArea;
+  Rect? customVisibleBounds;
 
   @override
   Rect? get bounds {
